@@ -25,7 +25,31 @@
           </block>
         </value>
         <statement name="DO0">
-          <block type="movement_right" id="327"></block>
+          <block type="movement_right" id="327">
+            <next>
+              <block type="oled_cleardisplay" id="623">
+                <next>
+                  <block type="oled_setcursor" id="633" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="663">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="677">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="614">
+                        <field name="TEXT">fmaddytp</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
         <value name="IF1">
           <block type="logic_compare" id="563" inline="true">
@@ -43,7 +67,31 @@
           </block>
         </value>
         <statement name="DO1">
-          <block type="movement_left" id="589"></block>
+          <block type="movement_left" id="589">
+            <next>
+              <block type="oled_cleardisplay" id="678">
+                <next>
+                  <block type="oled_setcursor" id="687" inline="true">
+                    <value name="STARTX">
+                      <block type="math_number" id="708">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <value name="STARTY">
+                      <block type="math_number" id="701">
+                        <field name="NUM">10</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="oled_drawtext" id="723">
+                        <field name="TEXT">I LOVE EMMELIA AND EVIE SO MUCH OMFG</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
         </statement>
         <statement name="ELSE">
           <block type="movement_forward" id="337"></block>
